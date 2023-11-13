@@ -47,40 +47,39 @@ class VacancyCell: UITableViewCell {
         label.numberOfLines = 0
         return label
     }()
-    
+
     private var salaryLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont(name:"HelveticaNeue-Bold", size: 16.0)
         return label
     }()
-    
+
     private var employerNameLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 13)
         return label
     }()
-    
+
     private var requirementsLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 13)
         label.numberOfLines = 0
         return label
     }()
-    
+
     private var responsibilityLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 13)
         label.numberOfLines = 0
         return label
     }()
-    
+
     private var employerLogo: UIImageView = {
         let imageView = UIImageView()
         imageView.layer.borderWidth = 1
         imageView.clipsToBounds = true
-        imageView.contentMode = .scaleToFill
+        imageView.contentMode = .scaleAspectFit
         return imageView
-        
     }()
 //MARK: - init methods
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -89,7 +88,7 @@ class VacancyCell: UITableViewCell {
         setupCell()
         setLayout()
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -109,6 +108,7 @@ class VacancyCell: UITableViewCell {
         employerLogo.layer.cornerRadius = employerLogo.bounds.size.width / 2
 
     }
+
     private func setupCell() {
         vacancyNameLabel.translatesAutoresizingMaskIntoConstraints = false
         salaryLabel.translatesAutoresizingMaskIntoConstraints = false

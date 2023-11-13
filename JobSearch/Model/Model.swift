@@ -43,7 +43,7 @@ struct LogoURL: Codable {
     var withSize90: String?
     var withSize240: String?
     var original: String?
-    
+
     enum CodingKeys: String, CodingKey {
         case original
         case withSize90 = "90"

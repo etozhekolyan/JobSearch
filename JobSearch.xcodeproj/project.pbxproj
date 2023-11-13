@@ -17,7 +17,6 @@
 		4F0BC9C92B00CB4200F2365C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0BC9C82B00CB4200F2365C /* Model.swift */; };
 		4F0BC9CD2B00F34200F2365C /* HeadHunterAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0BC9CC2B00F34200F2365C /* HeadHunterAPI.swift */; };
 		4F0BC9D02B01003700F2365C /* ViewModel .swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0BC9CF2B01003700F2365C /* ViewModel .swift */; };
-		4F0BC9D32B0119F200F2365C /* UITextView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0BC9D22B0119F200F2365C /* UITextView + Extension.swift */; };
 		4F0BC9D62B013F1A00F2365C /* UIImageView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0BC9D52B013F1A00F2365C /* UIImageView + Extension.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,7 +33,6 @@
 		4F0BC9C82B00CB4200F2365C /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		4F0BC9CC2B00F34200F2365C /* HeadHunterAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadHunterAPI.swift; sourceTree = "<group>"; };
 		4F0BC9CF2B01003700F2365C /* ViewModel .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewModel .swift"; sourceTree = "<group>"; };
-		4F0BC9D22B0119F200F2365C /* UITextView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView + Extension.swift"; sourceTree = "<group>"; };
 		4F0BC9D52B013F1A00F2365C /* UIImageView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView + Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,7 +117,6 @@
 		4F0BC9D42B0119F800F2365C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				4F0BC9D22B0119F200F2365C /* UITextView + Extension.swift */,
 				4F0BC9D52B013F1A00F2365C /* UIImageView + Extension.swift */,
 			);
 			path = Extensions;
@@ -141,6 +138,8 @@
 			dependencies = (
 			);
 			name = JobSearch;
+			packageProductDependencies = (
+			);
 			productName = JobSearch;
 			productReference = 4F0BC9AD2AFF82EA00F2365C /* JobSearch.app */;
 			productType = "com.apple.product-type.application";
@@ -169,6 +168,8 @@
 				Base,
 			);
 			mainGroup = 4F0BC9A42AFF82EA00F2365C;
+			packageReferences = (
+			);
 			productRefGroup = 4F0BC9AE2AFF82EA00F2365C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -203,7 +204,6 @@
 				4F0BC9D62B013F1A00F2365C /* UIImageView + Extension.swift in Sources */,
 				4F0BC9C72AFFB30800F2365C /* VacancyCell.swift in Sources */,
 				4F0BC9B32AFF82EA00F2365C /* SceneDelegate.swift in Sources */,
-				4F0BC9D32B0119F200F2365C /* UITextView + Extension.swift in Sources */,
 				4F0BC9D02B01003700F2365C /* ViewModel .swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

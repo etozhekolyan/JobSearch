@@ -49,7 +49,6 @@ class SearchResultView: UIView {
 
     private func setLayout() {
         let guide = self.safeAreaLayoutGuide
-        
         NSLayoutConstraint.activate([
             textField.topAnchor.constraint(equalToSystemSpacingBelow: guide.topAnchor, multiplier: 1.0),
             textField.leadingAnchor.constraint(equalTo: self.leadingAnchor),
@@ -80,7 +79,6 @@ class SearchResultView: UIView {
         tableView.reloadData()
     }
 }
-
 
 extension SearchResultView: UITextFieldDelegate {
     func textFieldDidChangeSelection(_ textField: UITextField) {

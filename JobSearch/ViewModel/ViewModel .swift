@@ -12,7 +12,7 @@ final class VacancyViewModel: ObservableObject {
     @Published var vacancyName = ""
     @Published var vacancyData = VacancyData()
     private var cancellableSet: Set<AnyCancellable> = []
-    
+
     init() {
         $vacancyName
             .debounce(for: 0.5, scheduler: RunLoop.main)
@@ -23,7 +23,7 @@ final class VacancyViewModel: ObservableObject {
             .assign(to: \.vacancyData, on: self)
             .store(in: &self.cancellableSet)
     }
-    
+
     func loadPage(with number: Int) -> AnyPublisher<VacancyData, Never> {
         HeadHunterAPI.shared.fetchData(for: vacancyName, page: number)
     }
