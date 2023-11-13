@@ -15,6 +15,7 @@ class SearchResultViewController: UIViewController {
     private var cancellable = Set<AnyCancellable>()
     private var currentPage = 0
     private var vacansyData: VacancyData?
+    private var items: [VacancyItem]?
 //MARK: - View controller life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,6 +51,21 @@ class SearchResultViewController: UIViewController {
         guard let currency = vacansyData?.items?[index].salary?.currency else { return nil }
         return "\(from) - \(to) \(currency)"
     }
+    
+    private func distributeData(data: VacancyData?) {
+        
+    }
+    
+    private func loadNextPage() {
+        viewModel.loadPage(with: currentPage)
+            .sink { [weak self] _ in
+                self?.reloadTable()
+            } receiveValue: { [weak self] data in
+                self?.vacansyData?.items! += data.items ?? []
+                self?.currentPage += 1
+            }
+            .store(in: &cancellable)
+    }
 }
 //MARK: - UITableViewDelegate extension
 extension SearchResultViewController: UITableViewDelegate {
@@ -65,6 +81,13 @@ extension SearchResultViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        guard let itemsCount = vacansyData?.items?.count else { return VacancyCell() }
+        
+        if indexPath.row == (itemsCount - 5) {
+            loadNextPage()
+        }
+        
         guard let cell = tableView.dequeueReusableCell(withIdentifier: VacancyCell.id, for: indexPath) as? VacancyCell else {
             return VacancyCell()
         }

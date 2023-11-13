@@ -23,4 +23,8 @@ final class VacancyViewModel: ObservableObject {
             .assign(to: \.vacancyData, on: self)
             .store(in: &self.cancellableSet)
     }
+    
+    func loadPage(with number: Int) -> AnyPublisher<VacancyData, Never> {
+        HeadHunterAPI.shared.fetchData(for: vacancyName, page: number)
+    }
 }
