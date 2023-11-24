@@ -18,6 +18,8 @@
 		4F0BC9CD2B00F34200F2365C /* HeadHunterAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0BC9CC2B00F34200F2365C /* HeadHunterAPI.swift */; };
 		4F0BC9D02B01003700F2365C /* ViewModel .swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0BC9CF2B01003700F2365C /* ViewModel .swift */; };
 		4F0BC9D62B013F1A00F2365C /* UIImageView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0BC9D52B013F1A00F2365C /* UIImageView + Extension.swift */; };
+		4F4F55DE2B0B8A7F006413A8 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4F55DD2B0B8A7F006413A8 /* DetailViewController.swift */; };
+		4F4F55E02B0B8AB2006413A8 /* DetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4F55DF2B0B8AB2006413A8 /* DetalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		4F0BC9CC2B00F34200F2365C /* HeadHunterAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadHunterAPI.swift; sourceTree = "<group>"; };
 		4F0BC9CF2B01003700F2365C /* ViewModel .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewModel .swift"; sourceTree = "<group>"; };
 		4F0BC9D52B013F1A00F2365C /* UIImageView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView + Extension.swift"; sourceTree = "<group>"; };
+		4F4F55DD2B0B8A7F006413A8 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		4F4F55DF2B0B8AB2006413A8 /* DetalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,14 +72,14 @@
 			children = (
 				4F0BC9B02AFF82EA00F2365C /* AppDelegate.swift */,
 				4F0BC9B22AFF82EA00F2365C /* SceneDelegate.swift */,
-				4F0BC9D12B0101C700F2365C /* ViewModel */,
-				4F0BC9CB2B00CF9700F2365C /* View  */,
-				4F0BC9CA2B00CF7E00F2365C /* Model */,
+				4F4F55DC2B0B8A4E006413A8 /* SearchScreen */,
 				4F0BC9CE2B00FFEF00F2365C /* NetworkService */,
 				4F0BC9B92AFF82EC00F2365C /* Assets.xcassets */,
 				4F0BC9BB2AFF82EC00F2365C /* LaunchScreen.storyboard */,
 				4F0BC9BE2AFF82EC00F2365C /* Info.plist */,
 				4F0BC9D42B0119F800F2365C /* Extensions */,
+				4F4F55DD2B0B8A7F006413A8 /* DetailViewController.swift */,
+				4F4F55DF2B0B8AB2006413A8 /* DetalView.swift */,
 			);
 			path = JobSearch;
 			sourceTree = "<group>";
@@ -120,6 +124,16 @@
 				4F0BC9D52B013F1A00F2365C /* UIImageView + Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4F4F55DC2B0B8A4E006413A8 /* SearchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				4F0BC9D12B0101C700F2365C /* ViewModel */,
+				4F0BC9CB2B00CF9700F2365C /* View  */,
+				4F0BC9CA2B00CF7E00F2365C /* Model */,
+			);
+			path = SearchScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,10 +213,12 @@
 				4F0BC9B52AFF82EA00F2365C /* SearchResultViewController.swift in Sources */,
 				4F0BC9C52AFF83A200F2365C /* SearchResultView.swift in Sources */,
 				4F0BC9B12AFF82EA00F2365C /* AppDelegate.swift in Sources */,
+				4F4F55E02B0B8AB2006413A8 /* DetalView.swift in Sources */,
 				4F0BC9C92B00CB4200F2365C /* Model.swift in Sources */,
 				4F0BC9CD2B00F34200F2365C /* HeadHunterAPI.swift in Sources */,
 				4F0BC9D62B013F1A00F2365C /* UIImageView + Extension.swift in Sources */,
 				4F0BC9C72AFFB30800F2365C /* VacancyCell.swift in Sources */,
+				4F4F55DE2B0B8A7F006413A8 /* DetailViewController.swift in Sources */,
 				4F0BC9B32AFF82EA00F2365C /* SceneDelegate.swift in Sources */,
 				4F0BC9D02B01003700F2365C /* ViewModel .swift in Sources */,
 			);
